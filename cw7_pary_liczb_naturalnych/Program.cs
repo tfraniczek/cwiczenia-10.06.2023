@@ -1,15 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace cw7_pary_liczb_naturalnych
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        Console.Write("Wprowadź liczbę n: ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Pary liczb o sumie równiej: ", n);
+        ParyLiczb(n);
+        Console.ReadLine();
+    }
+
+    static void ParyLiczb(int n)
+    {
+        for (int i = 1; i <= n / 2; i++)
         {
+            int skladowa = n - i;
+            Console.WriteLine(i " + " skladowa " = " n);
         }
     }
 }
